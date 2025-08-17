@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+.dark {
+  color-scheme: dark;
+  background-color: #1b1c1d;
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl shadow-sm border border-gray-200 bg-white dark:bg-background-color dark:border-gray-600 dark:text-white 
+  }
+}
